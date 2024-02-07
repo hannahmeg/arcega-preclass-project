@@ -8,7 +8,7 @@ def determine_adult(ages)
     end
   end
 
-  puts "The adults are #{adults}"
+  return "The adults are #{adults}"
 end
 
 p determine_adult([8,20,24,10,19])
