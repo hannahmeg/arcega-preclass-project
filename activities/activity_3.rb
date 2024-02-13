@@ -4,14 +4,14 @@
 #  Print on console the result.
 
 def get_differences(ages)
-  total = 0
-  ages.each do |age|
-    current_age #{age}
-
-
-    return
+  differences = []
+  (0...ages.length - 1).each do |i|
+    differences << ages[i + 1] - ages[i]
   end
+  puts "Age differences: #{differences}"
+  differences
 end
 
 
-p get_differences([10,12,14,20])
+ages = [20, 25, 30, 35, 40]
+get_differences(ages)
